@@ -1,38 +1,128 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+body {
+  background-color: pink;
+  font-family: Arial, sans-serif;
 }
-.grid-item {
-    background-color: lightgreen;
-    padding: 20px;
-    text-align: center;
-    
+
+h1, h3 {
+  color: #333;
 }
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
+
+.navbar {
+  margin-bottom: 20px;
 }
-.box {
-    background-color: lightblue;
-    padding: 20px;
-    text-align: center;
-    
+
+
+
+
+.container {
+  max-width: 900px;
 }
-.responsive-box {
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
+/* HERO-OSIO */
+.hero {
+  background: linear-gradient(135deg, #d4f1f4, #75e6da);
+  padding: 80px 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
-@media (max-width: 600px) {
-    .responsive-box {
-        background-color: lightcoral;
-    }
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #05445e;
 }
-@media (min-width: 601px) {
-    .responsive-box {
-        background-color: lightseagreen;
-    }
+
+.hero p {
+  font-size: 1.3rem;
+  color: #333;
 }
+
+.hero .btn {
+  margin: 10px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+}
+/* KORTTIEN HOVER-EFEKTI */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+/* NAPPIEN TYYLIT */
+.btn {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+footer {
+  border-top: 1px solid #ddd;
+  color: #555;
+}
+.card-img-top {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  background: none !important;
+  display: block;
+}
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.card-img-top:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h1, h2, h3 {
+  animation: slideIn 0.7s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
