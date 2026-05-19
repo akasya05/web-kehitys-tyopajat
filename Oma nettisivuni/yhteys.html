@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yhteystiedot</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Harrastukseni</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+          <li class="nav-item"><a class="nav-link" href="kukat.html">Kukkien tekeminen</a></li>
+          <li class="nav-item"><a class="nav-link" href="kynnet.html">Kynsien tekeminen</a></li>
+          <li class="nav-item"><a class="nav-link" href="yhteys.html">Yhteystiedot</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <div class="container mt-5">
+  <h1>Ota yhteyttä</h1>
+  <p class="lead">Voit lähettää minulle viestin tällä lomakkeella.</p>
+
+  <form>
+    <div class="mb-3">
+      <label for="nimi" class="form-label">Nimi</label>
+      <input type="text" class="form-control" id="nimi" placeholder="Kirjoita nimesi">
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Sähköposti</label>
+      <input type="email" class="form-control" id="email" placeholder="esimerkki@gmail.com">
+    </div>
+
+    <div class="mb-3">
+      <label for="viesti" class="form-label">Viesti</label>
+      <textarea class="form-control" id="viesti" rows="4" placeholder="Kirjoita viestisi"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lähetä</button>
+  </form>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <footer class="text-center mt-5 p-3 bg-light">
+  <p>© 2024 Harrastukseni – Kaikki oikeudet pidätetään</p>
+</footer>
+</body>
+</html>
